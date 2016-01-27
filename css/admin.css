@@ -1,0 +1,874 @@
+/* General setting for this plugin only */
+input[type="checkbox"], 
+input[type="radio"] {
+    margin: 0 5px 0 0;
+}
+body{
+    background: none;
+}
+
+/* ====================================== */
+/* 	General Setting
+/* ====================================== */
+.air-admin {
+	margin: 10px auto 0 auto;
+	padding-right: 20px;
+	min-width: 960px;
+}
+
+.air-admin .air-logo {
+    margin-bottom: 10px;
+}
+.air-admin a {
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	box-shadow: none;
+}
+.air-admin textarea {
+	width: 400px;
+	height: 100px;
+        resize: none;
+}
+.air-admin .air-label-for {
+    cursor: pointer;
+}
+
+/* ====================================== */
+/* 	Slider button
+/* ====================================== */
+.air-admin .air-button {
+	position: relative;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 5px 14px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	background-color: transparent;
+	color: #FFFFFF;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	white-space: normal;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	line-height: 20px;
+	cursor: pointer;
+	-webkit-transition: all .15s ease;
+	transition: all .15s ease;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+        opacity: 1;
+}
+
+.air-admin .air-button:hover,.air-button:focus {
+	outline: 0;
+	text-decoration: none;
+}
+
+.air-admin .air-button:active,.air-button.air-is-active {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-decoration: none;
+}
+
+.air-admin .air-button[disabled],
+.air-admin .air-button.air-is-disabled {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+.air-admin .air-button.air-is-default {
+	border-color: #656d78;
+	background-color: #f5f7fa;
+	color: #434a54;
+}
+
+.air-admin .air-button.air-is-default:hover,.air-button.air-is-default:focus {
+	border-color: #737c89;
+	background-color: #FFF;
+}
+
+.air-admin .air-button.air-is-default:active,
+.air-admin .air-button.air-is-default.air-is-active {
+	border-color: #575e67;
+	background-color: #e1e7f0;
+}
+
+.air-admin .air-button.air-is-primary {
+	border-color: #BE2424;
+    background-color: #DA3B3B;
+	color: #FFF;
+}
+
+.air-admin .air-button.air-is-primary:hover,
+.air-admin .air-button.air-is-primary:focus {
+	 border-color: #A70909;
+    background-color: #AF2323;
+}
+
+.air-admin .air-button.air-is-primary:active,
+.air-admin .air-button.air-is-primary.air-is-active {
+	border-color: #1f80a4;
+	background-color: #27a2cf;
+}
+.air-admin .air-button.air-is-navy {
+	border-color: #2494be;
+	background-color: #F7442B;
+	color: #FFF;
+}
+
+.air-admin .air-button.air-is-navy .ad-s-setting-head{background: #EF543E;}
+.air-slider-setting-table tr:nth-child(odd) td.air-is-navy .ad-s-setting-head{background: #F72E11;}
+
+
+.air-admin .air-button.air-is-navy:hover,
+.air-admin .air-button.air-is-navy:focus {
+	border-color: #2aa8d7;
+	background-color: #F72E11;
+}
+
+.air-admin .air-button.air-is-navy:active,
+.air-admin .air-button.air-is-navy.air-is-active {
+	border-color: #E0260B;
+	background-color: #E0260B;
+}
+
+.air-admin .air-button.air-is-secondary {
+	border-color: #7652d1;
+	background-color: #967adc;
+	color: #FFF;
+}
+
+.air-admin .air-button.air-is-secondary:hover,
+.air-admin .air-button.air-is-secondary:focus {
+	border-color: #896ad7;
+	background-color: #a992e2;
+}
+
+.air-admin .air-button.air-is-secondary:active,
+.air-admin .air-button.air-is-secondary.air-is-active {
+	border-color: #633acb;
+	background-color: #8362d6;
+}
+
+.air-admin .air-button.air-is-success {
+	border-color: #3C7B15;
+    background-color: #238810;
+	color: #FFF;
+}
+
+.air-admin .air-button.air-is-success:hover,
+.air-admin .air-button.air-is-success:focus {
+	border-color: #82bc43;
+	background-color: #9bc969;
+}
+
+.air-admin .air-button.air-is-success:active,
+.air-admin .air-button.air-is-success.air-is-active {
+	border-color: #628e33;
+	background-color: #7db440;
+}
+
+.air-admin .air-button.air-is-green {
+	border-color: #28c163;
+	background-color: #42c574;
+	color: #FFF;
+}
+
+.air-admin .air-button.air-is-green:hover,
+.air-admin .air-button.air-is-green:focus {
+	border-color: #0c6f32;
+	background-color: #108b40;
+}
+
+.air-admin .air-button.air-is-green:active,
+.air-admin .air-button.air-is-green.air-is-active {
+	border-color: #0c6f32;
+	background-color: #108b40;
+}
+
+.air-admin .air-button.air-is-warning {
+	border-color: #f4a911;
+	background-color: #f6bb42;
+	color: #FFFFFF;
+}
+
+.air-admin .air-button.air-is-warning:hover,
+.air-admin .air-button.air-is-warning:focus {
+	border-color: #f5b42e;
+	background-color: #f7c65f;
+}
+
+.air-admin .air-button.air-is-warning:active,
+.air-admin .air-button.air-is-warning.air-is-active {
+	border-color: #dc970a;
+	background-color: #f5b025;
+}
+.air-admin .air-button.air-is-orange {
+	border-color: #e8a115;
+	background-color: #f1a40c;
+	color: #FFF;
+}
+
+.air-admin .air-button.air-is-orange:hover,
+.air-admin .air-button.air-is-orange:focus {
+	border-color: #f7b025;
+	background-color: #f7b32f;
+}
+
+.air-admin .air-button.air-is-orange:active,
+.air-admin .air-button.air-is-orange.air-is-active {
+	border-color: #f7b025;
+	background-color: #f7b32f;
+}
+
+.air-admin .air-button.air-is-danger {
+	border-color: #c42737;
+	background-color: #da4453;
+	color: #FFF;
+}
+
+.air-admin .air-button.air-is-danger:hover,
+.air-admin .air-button.air-is-danger:focus {
+	border-color: #d63344;
+	background-color: #df5e6a;
+}
+
+.air-admin .air-button.air-is-danger:active,
+.air-admin .air-button.air-is-danger.air-is-active {
+	border-color: #aa2230;
+	background-color: #d52a3c;
+}
+
+.air-admin .air-button.air-is-inverse {
+	border-color: #434a54;
+	background-color: #656d78;
+	color: #FFF;
+}
+
+.air-admin .air-button.air-is-inverse:hover,
+.air-admin .air-button.air-is-inverse:focus {
+	border-color: #515965;
+	background-color: #737c89;
+}
+
+.air-admin .air-button.air-is-inverse:active,
+.air-admin .air-button.air-is-inverse.air-is-active {
+	border-color: #353b43;
+	background-color: #575e67;
+}
+
+/* ====================================== */
+/* 	Slider setting Table
+/* ====================================== */
+.air-admin .air-table {
+	overflow:hidden;
+	border:1px solid #d3d3d3;
+	background:#fefefe;
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse: separate;
+	clear: left;
+        padding: 10px;
+}
+
+.air-admin .air-table th,
+.air-admin .air-table td {
+	padding: 5px 10px;
+}
+
+.air-admin .air-table th {
+	padding: 10px;
+	text-shadow: 1px 1px 1px #fff;
+	background: #e8eaeb;
+}
+
+.air-admin .air-table td:last-child {
+	border-right: none;
+}
+
+.air-admin .air-table tr.odd-row td {
+	background: #f6f6f6;
+}
+
+.air-admin .air-table td.first,
+.air-admin .air-table th.first {
+	text-align: left;
+}
+.air-admin .air-home .air-table td {
+    border-left:1px solid #eee; 
+    text-align: center;
+    word-break: break-all;
+}
+.air-admin .air-home .air-table td:first-child{
+    width: 70px
+}
+.air-admin .air-home .air-table td:last-child {
+    border-right:1px solid #eee; 
+    width: 550px
+}
+.air-admin .air-table td {
+    vertical-align: top;
+    border-bottom: 1px solid #d9d9d9;
+}
+.air-admin .air-table td.air-no-border, .air-admin .air-no-border {
+    border: none;
+}
+.air-admin .air-table td.air-content { 
+    width: 45%;
+    word-break: break-all;
+}
+.air-admin .air-table.air-slider-setting-block td.air-content,
+.air-admin .air-table.air-slide-settings-list td.air-content {
+    width: auto;   
+}
+.air-admin .air-table td.air-content label {
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+.air-admin .air-table td.air-content label.air-video-wh input {
+    width: 50px;
+}
+.air-admin .air-table td.air-name {
+    width: 20%;
+}
+.air-admin .air-table td.last {
+	border-right: none;
+}
+
+.air-admin .air-table tr.odd-row td {
+	background: -moz-linear-gradient(100% 25% 90deg, #f6f6f6, #f1f1f1);
+	background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f1f1f1), to(#f6f6f6));
+}
+
+.air-admin .air-table th {
+	background: -moz-linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
+	background: -webkit-gradient(linear, 0% 0%, 0% 20%, from(#ededed), to(#e8eaeb));
+}
+
+.air-admin .air-table tr:first-child th.first {
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+}
+
+.air-admin .air-table tr:first-child th.last {
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+
+.air-admin .air-table tr:last-child td.first {
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+.air-admin .air-table tr:last-child td.last {
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+.air-admin .air-table td.air-no-padding{
+    padding: 0;
+}
+.air-admin .air-table td.air-pl0{
+    padding-left: 0;
+}
+.air-admin .air-table td.air-pr0{
+    padding-right: 0;
+}
+.air-admin .air-table .air-table-header {
+	text-align: center;
+	font-weight: bold;
+}
+
+.air-admin .air-table .air-description {
+	width: auto;
+}
+.air-admin .air-table .air-description {
+    font-style: italic;
+    color: #999;
+}
+
+/* ====================================== */
+/* 	Slider Message
+/* ====================================== */
+.air-admin .air-message {
+	padding: 15px;
+	border-radius: 4px;
+	border: solid 1px;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+.air-admin .air-message.air-message-ok {
+	background-color: #dff0d8;
+	border-color: #72a53b;
+	color: #3c763d;
+}
+
+.air-admin .air-message.air-message-error {
+	background-color: #f2dede;
+	border-color: #c42737;
+	color: #a94442;
+}
+
+.air-admin .air-message.air-message-warning {
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border-color: #f4a911;
+}
+
+/* ====================================== */
+/* 	Slider UI tab
+/* ====================================== */
+.air-admin .air-tabs.ui-tabs .ui-tabs-panel{
+    padding: 0px;
+}
+.air-admin .air-tabs .ui-tabs-nav:before, .air-admin .air-tabs .ui-tabs-nav:after {
+    border-collapse: collapse;
+    clear: both;
+    content: "";
+    display: table;
+}
+.air-admin .air-tabs .ui-tabs-nav {
+	width: auto;
+}
+.air-admin .air-tabs > ul {
+	margin: 0;
+}
+.air-admin .air-tabs .ui-tabs-nav li {
+	float: left;
+	padding: 0 20px 0 0;
+	margin: 0 20px 0 0;
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+	border-right: solid 1px #ddd;
+	text-transform: uppercase;	
+	font-weight: bold;
+	outline: none;
+        border-radius: 0px;
+        color: #444444;
+        font-family: "Open Sans",sans-serif;
+        font-size: 13px;
+        line-height: 1.4em;
+}
+.air-admin .air-tabs.air-tabs-border .ui-tabs-nav li {
+	border-top: solid 1px #ddd;
+	margin-right: 0;
+	padding: 0;
+}
+.air-admin .air-tabs .ui-tabs-nav li a {
+    color: #ffffff;
+    margin-left: 0px;
+    padding: 8px 10px;
+    float: left;
+    border: medium none;
+    border-radius: 0px;
+}
+.air-admin #as-slides .air-tabs .ui-tabs-nav li {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.air-admin #as-slides .air-tabs .ui-tabs-nav li a {
+    margin: 0;
+    float: left;
+    border: medium none;
+    border-radius: 0px;
+    color: #ffffff;
+}
+#as-slides .air-sortable li span.air-close {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+    text-align: right;
+}
+.air-admin .air-tabs.air-tabs-border .ui-tabs-nav li:first-child {
+	border-left: solid 1px #ddd;
+}
+.air-admin .air-tabs.air-tabs-border .ui-tabs-nav li:last-child {
+	border-right: solid 1px #ddd;
+}
+.air-admin .air-tabs .ui-tabs-nav li:last-child {
+	border-right: none;
+}
+.air-admin .air-slide-tabs .ui-tabs-nav li,
+.air-admin .air-slide-tabs .ui-tabs-nav li a {
+	cursor: move;
+}
+.air-admin .air-slide-tabs .ui-tabs-nav li.ui-state-disabled,
+.air-admin .air-slide-tabs .ui-tabs-nav li.ui-state-disabled a {
+	cursor: pointer;
+}
+.air-admin .ui-state-default, 
+.air-admin .ui-widget-content .ui-state-default, 
+.air-admin .ui-widget-header .ui-state-default,
+.air-admin .ui-state-active, 
+.air-admin .ui-widget-content .ui-state-active, 
+.air-admin .ui-widget-header .ui-state-active{
+    background: none;
+}
+
+/* ====================================== */
+/* 	Slider Setting
+/* ====================================== */
+.air-admin #as-slider-name {
+	width: 100%;
+	padding: 10px;
+}
+.air-admin .wp-picker-input-wrap .air-slider-background-type-color-picker-input{
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #dddddd;
+    color: #32373c;
+    padding: 3px 5px;
+}
+.ad-s-setting-head {
+    background: #F72E11;
+    clear: both;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 10px;
+    position: relative;
+}
+.air-default-option-td{
+    position: relative;
+}
+.air-default-option-wrapper table
+{
+    background: none repeat scroll 0 0 #f5f7fa;
+}
+.air-default-option-wrapper
+{
+    background: none repeat scroll 0 0 #fff;
+    position: relative;
+    display: none;
+    margin-top: 5px;
+}
+.air-default-option-wrapper table{
+    border:1px solid #d9d9d9;
+}
+.air-default-option-list td{
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #d9d9d9;
+    text-align: center;
+    vertical-align: middle!important;
+    cursor: pointer;
+}
+.air-default-option-list td img{
+    padding: 5px 10px;
+}
+.air-default-option-list td.active img{
+    outline: 2px solid #2ecc71;
+}
+.air-admin .air-table .air-default-option-list td.border-right{
+    border-right: 1px solid #d9d9d9;
+}
+.air-slider{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.air-slider .ui-widget-content{
+    color:#444;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.air-slider .ui-widget-header{
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    padding: 0;
+    border-radius: 0px; 
+}
+.air-slider .air-element-pro-tab .ui-widget-content{
+    margin: 0;
+}
+.air-admin .air-content .wp-color-result{
+    margin: 0;
+}
+#as-slides, #as-slider-settings{
+    margin-top: 20px;
+}
+#as-slider-settings .ad-s-setting-head{
+    margin-top: 2px;
+}
+#as-slides .ad-s-setting-content, #as-slider-settings .ad-s-setting-content, #as-slides .air-slide-editing-area, #as-slides .air-elements-actions, #as-slides .air-ele-time{
+    margin-bottom: 20px;
+}
+.air-admin .air-slider-back-list{
+    border: medium none;
+    padding: 8px 10px;
+    border-radius: 0px; 
+}
+
+/* ====================================== */
+/* 	Slider slides Setting
+/* ====================================== */
+.air-admin .air-slide,
+.air-admin .air-void-slide {
+	display: none;
+}
+.air-admin #as-slides .air-slides-list .air-slide-settings-list form {
+	display: inline;
+}
+.air-admin .wp-picker-input-wrap .air-slide-background-type-color-picker-input{
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #dddddd;
+    color: #32373c;
+    padding: 3px 5px;
+        
+}
+.air-admin .air-slide .air-slide-editing-area{
+  position: relative;
+  background-color: #fff;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin: 0 auto;
+  line-height: 1.5;
+  overflow: hidden;
+  height: 500px;
+  width: 1170px;
+}
+.air-admin .air-slide .air-slide-editing-area:after{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+.air-slides-list {
+    clear: both;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.air-admin .wp-color-result{
+    top: 2px;
+    
+}
+.air-admin .air-background-opacity{
+    margin-left: 5px;
+    width: 50px;
+}
+.air-import-wrapper{
+    position: relative;
+    float: right;
+}
+.air-import-block{
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 33px;
+    z-index: 9;
+}
+.air-admin .mr5{
+    margin-right: 5px;
+}
+.air-admin .mt5{
+    margin-top: 5px;
+}
+.air-slider-title-wrapper{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.air-slider-title{
+    float: left;
+    margin-top: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.air-slider-settings-list{
+    float: left;
+    width: 100%;
+}
+.air-slider-settings-wrapper{
+    float: left;
+    width: 100%;
+    position: relative;
+	color:#5A5A5A;
+}
+.air-admin .air-reset-slider-settings{
+    position: absolute;
+    right: 3px;
+    top: 6px;
+}
+.air-slider-settings-wrapper .air-slider-setting-block{
+    display: none;
+    width: 100%;
+}
+.air-admin .air-slider-setting-table {
+    position: relative;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+.air-admin .air-duplicate-slide {
+    position: absolute;
+    right: 3px;
+    top: 4px;
+}
+.air-admin .air-slider-setting-tab {
+    border: medium none;
+    border-radius: 0;
+    text-align: left;
+    padding: 0px;
+    display: table-cell;
+}
+.air-admin .air-call-import-slider{
+    float: right;
+}
+.air-admin .air-sliders-list{
+    margin-bottom: 10px;
+}
+.air-admin .air-left{
+    float: left;
+}
+.air-admin .air-right{
+    float: right;
+}
+.air-admin .wp-color-result{
+    height: 24px;
+}
+
+/* ====================================== */
+/* 	Slider elements Setting
+/* ====================================== */
+.air-admin .air-ele-title {
+    word-break: break-all;
+}
+.air-admin .air-slide .air-elements .air-elements-actions {
+	text-align: center;
+}
+.air-admin .air-slide .air-elements .air-void-element-settings {
+	display: none;
+}
+.air-admin .air-slide .air-slide-editing-area .air-element {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	cursor: move;
+}
+.air-admin .air-slide .air-slide-editing-area .air-element.active {
+	-webkit-box-shadow: 0 0 8px #D3D3D3;
+	-moz-box-shadow: 0 0 8px #D3D3D3;
+	border: 1px dashed #6ed5cf;
+        box-shadow: 0 0 8px #D3D3D3;
+}
+.air-element-pro-tab .air-element-type-block {
+    display: none;
+}
+.air-ele-time {
+    background: #ffffff;
+    display: block;
+    position: relative;
+    border: 1px solid #cccccc;
+}
+.air-ele-time table{
+    margin: 20px;
+}
+.air-ele-time table tr th{
+    border-top: 1px solid #ccc;
+    background: #eee;
+}
+.air-ele-time table tr th:first-child, .air-ele-time table tr td:first-child{
+    border-left: 1px solid #ccc;
+}
+.air-ele-time table tr th,.air-ele-time table tr td{
+    border-right: 1px solid #ccc;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.air-close-block {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    top: 10px;
+    z-index: 9;
+    color: #ffffff;
+}
+.air-txt-delay-time {
+    margin-left: 18px;
+    width: 100px;
+}
+.air-ele-list,.air-ele-list .dashicons{
+    cursor: pointer;
+}
+.air-ele-list .air-ele-title .dashicons{
+    color: rgba(0, 0, 0, 0.3);
+    margin-right: 5px;
+    cursor: default;
+}
+.air-ele-list.hide_element span, .air-ele-list.hide_element input{
+    opacity: 0.4;
+}
+.air-ele-list.active {
+    border: 1px solid #8cc152;
+    background: none repeat scroll 0 0 rgba(140, 193, 82, 0.8);
+}
+.air-ele-list.active.hide_element
+{
+    background: none repeat scroll 0 0 rgba(140, 193, 82, 0.4);
+}
+.air-video-search,.air-video-block{
+    display: none;
+}
+.video_block_title{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 15px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    text-transform: capitalize;
+    z-index: 99;
+    padding: 5px 0;
+}
+.video_block_icon{
+    position: absolute;
+    left:1px;
+    bottom: 5px;
+    z-index: 99;
+    width: 64px;
+    height: 64px;
+}
+.vimeo_icon{
+    background: url(../images/vimeo_icon.png) no-repeat;
+}
+.youtube_icon{
+    background: url(../images/youtube_icon.png) no-repeat;
+}
+.html5_icon{
+    background: url(../images/html5_icon.png) no-repeat;
+}
+.air-admin .air-ele-time h3{
+    margin-top: 0px;
+}
